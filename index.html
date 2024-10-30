@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM Hostel Compass Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="location-name">SRM Boys Hostel Tracker</div>
+
+    <div class="instructions">
+        <h3>How to use:</h3>
+        <ol>
+            <li>Click "Start Tracking" button</li>
+            <li>Allow location and orientation permissions</li>
+            <li>Red arrow shows your direction</li>
+            <li>Blue arrow points to SRM Boys Hostel</li>
+        </ol>
+    </div>
+
+    <button id="startButton">Start Tracking</button>
+
+    <div class="compass-container">
+        <div class="compass">
+            <div class="arrow"></div>
+            <div class="target-arrow"></div>
+        </div>
+    </div>
+
+    <div class="info-panel">
+        <div class="info-item">Your Direction: <span id="direction">N/A</span></div>
+        <div class="info-item">Distance to Hostel: <span id="distance">N/A</span></div>
+        <div class="info-item">Hostel Direction: <span id="targetDirection">N/A</span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Digital Compass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1 class="app-title">Digital Compass</h1>
+        <div class="status-indicator"></div>
+    </header>
+
+    <main>
+        <section class="compass-container">
+            <div class="compass-body">
+                <div class="compass-ring">
+                    <div class="direction-text main" data-direction="N">N</div>
+                    <div class="direction-text main" data-direction="S">S</div>
+                    <div class="direction-text main" data-direction="E">E</div>
+                    <div class="direction-text main" data-direction="W">W</div>
+                    <div class="compass-arrow"></div>
+                    <div class="target-arrow"></div>
+                    <div class="compass-center"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-panel">
+            <div class="info-item"><span class="info-label">Heading:</span> <span id="heading">0°</span></div>
+            <div class="info-item"><span class="info-label">Direction:</span> <span id="direction">N</span></div>
+            <div class="info-item"><span class="info-label">Distance to Target:</span> <span id="distance">--</span></div>
+        </section>
+
+        <div id="calibrationOverlay">
+            <h2>Calibrate Compass</h2>
+            <p>Move your phone in a figure-8 pattern to calibrate.</p>
+            <button id="calibrationButton">Start Compass</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
